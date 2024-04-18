@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Management</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" alt="site logo" />
+      <h1>Time Management App</h1>
+    </header>
+
+    <main>
+      <section class="time-plan container">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Timespan</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+
+        <br />
+        <button id="btnShowForm">Save Preference</button>
+        <button id="btnDeleteAll" class="btn-delete">Delete All</button>
+      </section>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <section id="preference" class="container modal-content">
+          <hr />
+          <h2>Add Preference</h2>
+          <form action="#">
+            <div class="form-group">
+              <label>Activity</label>
+              <input type="text" name="activity" id="activity" required />
+            </div>
+
+            <div class="form-group">
+              <label>Time Spent</label>
+              <input type="number" name="timeSpent" id="timeSpent" required />
+            </div>
+
+            <button id="btnSubmit">Save</button>
+
+            <div class="form-group hide">
+              <label>Username</label>
+              <input type="text" name="Username" id="username" required />
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 - Developed by Me!</p>
+    </footer>
+
+    <script src="js/site.js"></script>
+  </body>
+</html>
